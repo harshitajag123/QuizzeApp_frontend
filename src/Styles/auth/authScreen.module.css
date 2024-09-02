@@ -1,0 +1,129 @@
+.authWrapper{
+  width:100vw;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  margin:20px;
+  
+}
+
+.authCard{
+  width:1050px;
+  height:600px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  border-radius:1rem;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+.authCard> h1{
+  font-family:Jomhuria;
+  font-size:100px;
+  font-weight:400;
+  line-height:80px;
+  padding:20px;
+  margin-top:-40px;
+}
+
+.authCard >.authType{
+  width:60%;
+  display:flex;
+  justify-content:space-around;
+
+}
+
+.authCard >.authType >p{
+  font-size:20px;
+  font-weight:500;
+  line-height:30px;
+  background-color:#fff;
+  width:220px;
+  text-align:center;
+  border-radius:10px;
+  cursor:pointer;
+}
+
+.authTypeHover,
+.authWrapper>.authCard>.authType>p:hover {
+  box-shadow: 0 1px 15px 3px #0019FF3D;
+}
+
+.authCard>form{
+  width:60%;
+  height:200px;
+  margin-top:40px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+
+.authCard>form>div{
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  margin-bottom:10px;
+  
+
+}
+
+form>div>label{
+  width:40%;
+  text-align:left;
+  font-size:20px;
+  font-weight:500;
+  line-height:30px;
+  
+}
+
+.authCard>form>div>input{
+  width:50%;
+  height:38px;
+  outline:none;
+  border:1px solid #F4F4F4 ;
+  border-radius:10px 10px 0 0;
+  font-size:18px;
+  padding:0 10px;
+  font-weight:500;
+  line-height:20px;
+  background-color: #f4f4f4;
+
+}
+
+.authCard>form>div>input.error {
+  border: 1px solid #D60000;
+  /* Red border for the input when there's an error */
+}
+
+form>.error {
+  height: 40px;
+}
+.authCard>form>input>.error{
+  border: 1px solid #D60000;
+}
+.authCard>form>.error>p {
+  width: 100%;
+  font-size: 12px;
+  font-weight: 500;
+  color: #D60000;
+  margin-left: 55%;
+  margin-top:-40px;
+}
+
+.authCard>form>button {
+  padding: 6px 20%;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  border: none;
+  background-color: #A9BCFF;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease-out;
+}
+
+.authCard>form>button:hover {
+  background-color: #94abfd;
+}

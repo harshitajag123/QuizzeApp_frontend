@@ -1,0 +1,36 @@
+.timer{
+  width:26%;
+  height:150px;
+  margin-top:4%;
+  margin-right:5%;
+  display:flex;
+  flex-direction:column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.timer>h2 {
+  width: 80px;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.timer>div {
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+  width: 90px;
+  padding: 5px;
+  margin-top: 10px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 15px 0 #00000026;
+  cursor: pointer;
+  transition: 0.3s ease-out;
+}
+
+.timer>div:hover,
+.bgRed {
+  background-color: red;
+  color: #fff;
+}

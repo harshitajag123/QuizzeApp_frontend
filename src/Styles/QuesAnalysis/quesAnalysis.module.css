@@ -1,0 +1,99 @@
+.analysisContainer {
+  width: 125%;
+  height: 100vh;
+  padding: 40px 0 10px 7%;
+  overflow-y: auto;
+  overflow-x: hidden;
+    
+  background: #EDEDED;
+}
+
+.analysisContainer>div:nth-child(1) {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5%;
+  flex-wrap: wrap;
+  /* Allow items to wrap on smaller screens */
+}
+
+.analysisContainer>div:nth-child(1)>h1 {
+  font-size: 35px;
+  color: #5076FF;
+  margin-right: 20px;
+  
+  /* Add margin to create space between items */
+}
+
+.analysisContainer>div:nth-child(1)>div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 15px;
+  font-weight: 600;
+  color: #FF5D01;
+}
+
+.analysisContainer>div:nth-child(1)>div>p {
+  margin: 0;
+}
+
+.analysisContainer>div:nth-child(2)>div>h1 {
+  font-size: 25px;
+  font-weight:600;
+}
+
+.analysisContainer>div:nth-child(2)>div>div {
+  display: flex;
+  flex-wrap: wrap;
+  /* Ensure content wraps on smaller screens */
+}
+
+.analysisContainer>div:nth-child(2)>div>div>div {
+  width: 280px;
+  background-color: #fff;
+  text-align: center;
+  margin: 40px 40px 40px 0;
+  padding: 20px 20px;
+  border-radius: 8px;
+  color: #474444;
+  
+}
+
+/* for horizontal line */
+.analysisContainer>div:nth-child(2)>div::after {
+  content: "";
+  display: block;
+  width: 90%;
+  height: 1px;
+  /* Make the line thinner */
+  background-color: #a39d9d;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  
+}
+
+.analysisContainer>div:nth-child(2)>div>div>div>h1 {
+  font-size: 32px;
+  font-weight:700;
+  color:#474444;
+}
+
+.analysisContainer>div:nth-child(2)>div>div>div>p {
+  font-size: 15px;
+  font-weight:600;
+}
+
+/* Add media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .analysisContainer>div:nth-child(1) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .analysisContainer>div:nth-child(1)>div {
+    align-items: flex-start;
+    margin-top: 10px;
+  }
+}

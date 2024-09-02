@@ -1,0 +1,191 @@
+.addQcontainer{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 30px 0;
+}
+
+.addQcontainer>div{
+  width:80%;
+  display:flex;
+  justify-content: space-between;
+  color: #9F9F9F;
+}
+
+.addQcontainer>div>.left {
+  display: flex;
+}
+
+.addQcontainer>div>.left>div>.addCircle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 10px 0 #00000026;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.bgGreen {
+  background-color: #60B84B;
+  color: #fff;
+}
+
+.addQcontainer>div>.left>div {
+  position: relative;
+}
+
+.addQcontainer>div>.left>div>.addCircle>h2 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.addQcontainer>div>.left>div>.removeIcon {
+  position: absolute;
+  font-size: 12px;
+  font-weight: 400;
+  color: #000;
+  top: 3px;
+  right: 2px;
+  cursor: pointer;
+}
+
+.addQcontainer>div>.left>.addIcon {
+  font-size: 28px;
+  margin: auto;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.addQcontainer>div>.rgtSide {
+  margin: auto 0;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.addQcontainer>.optionsAndTimer {
+  width: 100%;
+}
+
+.addQcontainer>.buttons {
+  width: 85%;
+}
+
+
+
+.addQcontainer>.buttons>button {
+  width: 200px;
+  font-size: 20px;
+  font-weight: 450;
+  border: none;
+  padding: 5px;
+  box-shadow: 2px 2px 15px 1px #00000026;
+  background-color:#fff;
+  color:#474444;
+  border-radius: 10px;
+  text-transform: capitalize;
+  cursor: pointer;
+  
+}
+
+
+.addQcontainer>.buttons>button:nth-child(2) {
+  background-color: #60B84B;
+  color: #fff;
+}
+
+.addQcontainer>.buttons>button:nth-child(2):hover {
+  background-color: #52a83c;
+}
+
+/* Responsive Design Adjustments */
+
+/* Medium screens (tablets, 768px to 1024px) */
+@media (max-width: 1024px) {
+  .addQ {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .left {
+    margin-bottom: 10px;
+  }
+
+  .optionsAndTimer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .btnDiv {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cancelBtn,
+  .continueBtn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+/* Small screens (mobile devices, less than 768px) */
+@media (max-width: 768px) {
+  .addQcontainer {
+    padding: 10px;
+  }
+
+  .addCircle {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .removeIcon {
+    font-size: 20px;
+  }
+
+  .addIcon {
+    font-size: 40px;
+  }
+
+  .rgtSide {
+    font-size: 12px;
+  }
+
+  .cancelBtn,
+  .continueBtn {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+/* Extra small screens (less than 480px) */
+@media (max-width: 480px) {
+  .addQ {
+    flex-direction: column;
+  }
+
+  .left {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .optionsAndTimer {
+    flex-direction: column;
+  }
+
+  .btnDiv {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .cancelBtn,
+  .continueBtn {
+    padding: 8px;
+    font-size: 12px;
+    width: 100%;
+  }
+}

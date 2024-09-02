@@ -1,0 +1,137 @@
+/* 
+.sidebarcontainer{
+  width:23vw;
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  align-items:center;
+  box-shadow: 1px 0 10px 0 #0000001F;
+  padding:20px 0;
+}
+
+.sidebarcontainer>h1{
+  font-size: 5em;
+  font-weight:400;
+  line-height: 60px;
+  font-family:Jomhuria;
+  color:#474444;
+}
+
+.sidebarcontainer>.navlinks{
+  display:flex;
+  flex-direction:column;
+  justify-content: space-between;
+  height:200px;
+
+}
+.navlinks>a{
+  text-decoration:none;
+  color:#474444;
+  font-size:1em;
+  font-weight:700;
+  line-height:30px;
+  padding:5px 30px;
+  border-radius:10px;
+
+}
+
+
+
+.sidebarcontainer>.navlinks>a:hover,
+.sidebarcontainer>.navlinks>.hoverEffect {
+  box-shadow: 2px 2px 10px 2px #0000001F;
+}
+
+.sidebarcontainer>h2 {
+  padding: 25px 20px 0 20px;
+  border-top: 1px solid black;
+  cursor: pointer;
+  transition: 0.3s ease-out;
+  margin:5px;
+}
+
+.sidebarcontainer>h2:hover {
+  box-shadow: 2px 2px 15px 2px #0000001F;
+} */
+
+.sidebarcontainer {
+  width: 20vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 1px 0 10px 0 #0000001f;
+  padding: 1rem 0;
+}
+
+.sidebarcontainer>h1 {
+  font-size: 5rem;
+  font-weight: 400;
+  line-height: 60px;
+  font-family: Jomhuria;
+  color: #474444;
+}
+
+.sidebarcontainer>.navlinks {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: auto;
+}
+
+.navlinks>a {
+  text-decoration: none;
+  color: #474444;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 2rem;
+  padding: 0.5rem 2rem;
+  border-radius: 10px;
+}
+
+.sidebarcontainer>.navlinks>a:hover,
+.sidebarcontainer>.navlinks>.hoverEffect {
+  box-shadow: 2px 2px 10px 2px #0000001f;
+}
+
+.sidebarcontainer>h2 {
+  padding: 1rem;
+  border-top: 1px solid black;
+  cursor: pointer;
+  transition: 0.3s ease-out;
+  margin: 0.5rem;
+}
+
+.sidebarcontainer>h2:hover {
+  box-shadow: 2px 2px 15px 2px #0000001f;
+}
+
+@media screen and (max-width: 768px) {
+  .sidebarcontainer {
+    width: 100vw;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .sidebarcontainer>h1 {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+
+  .navlinks {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .navlinks>a {
+    padding: 0.5rem 1rem;
+  }
+
+  .sidebarcontainer>h2 {
+    text-align: center;
+    font-size: 1rem;
+  }
+}

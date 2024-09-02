@@ -1,0 +1,113 @@
+.mainWrapper {
+  width: 90%;
+  display: flex;
+  margin: 20px 0;
+  flex-wrap: wrap;
+  /* Added for responsiveness */
+}
+
+.opts {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 40px 40px;
+}
+
+.opts>div {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  /* Added for responsiveness */
+  margin-bottom: 20px;
+  /* Added for better spacing */
+}
+
+.opts>div>.radioInput>input {
+  cursor: pointer;
+  accent-color: green;
+  margin: 8px 5px;
+}
+
+.opts>div>div>div {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.opts>div>div>div>input {
+  width: 280px;
+  margin: 4px 0;
+  margin-right: 3.5%;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  color: #9f9f9f;
+  box-shadow: 1.5px 1px 15px 0 #00000026;
+}
+
+/* Button for adding more options */
+.opts>.addBtn {
+  width: 280px;
+  font-size: 17px;
+  font-weight: 500;
+  margin-left: 20px;
+  margin-top: 5px;
+  padding: 6px 35px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #9f9f9f;
+  box-shadow: 1px 1px 15px 0 #00000026;
+}
+
+.opts>.addBtn:hover {
+  background-color: #f2ecec9a;
+}
+
+/* Specific width adjustment for the first input */
+.opts>div>div>div>input:nth-child(1) {
+  width: 280px;
+}
+
+/* Container for the delete icon */
+.opts>div>div>div>div {
+  display: flex;
+  justify-content: center;
+}
+
+/* Delete icon styling */
+.opts>div>div>div>div>.deleteIcon {
+  color: red;
+  cursor: pointer;
+  margin: 15px 0px;
+}
+
+/* Class to change background color to green for correct option */
+.bgGreen {
+  background-color: #60b84b;
+  color: #fff !important;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .opts {
+    margin: 20px 10px;
+  }
+
+  .opts>div {
+    margin-bottom: 15px;
+  }
+
+  .opts>div>div>div>input {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .opts>.addBtn {
+    width: 100%;
+    margin-left: 0;
+    padding: 10px;
+  }
+}

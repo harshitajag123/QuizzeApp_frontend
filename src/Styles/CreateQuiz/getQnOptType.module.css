@@ -1,0 +1,96 @@
+.queContainer {
+  width: 100%;
+  /* Full width container for the question input and option types */
+}
+
+.queInput>input {
+  width: 100%;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 6px;
+  border: none;
+  outline: none;
+  box-shadow: 1px 1px 10px 0 #00000026;
+  margin: 30px 0;
+  /* Styling for the question input field */
+}
+
+.optType {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* Flex container to align option types horizontally */
+}
+
+.optTitle {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 28px;
+  color: #9F9F9F;
+  /* Styling for the "Option Type" label */
+}
+
+.optType>div {
+  display: flex;
+  align-items: center;
+  /* Flex container for each option type (radio button and label) */
+}
+
+.optType>div>label {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 30px;
+  margin-left: 8px;
+  margin-right: 20px;
+  color: #9F9F9F;
+  /* Styling for the labels of the option types */
+}
+
+.optType>div>input {
+  accent-color: green;
+  cursor: pointer;
+  /* Styling for the radio buttons */
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .optType {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .optType>div {
+    margin-bottom: 15px;
+  }
+
+  .optType>div>label {
+    margin-right: 10px;
+  }
+
+  .queInput>input {
+    font-size: 16px;
+    margin: 20px 0;
+  }
+
+  .optTitle {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .optType {
+    align-items: center;
+  }
+
+  .queInput>input {
+    font-size: 14px;
+    padding: 5px;
+  }
+
+  .optType>div>label {
+    font-size: 14px;
+    margin-right: 8px;
+  }
+}

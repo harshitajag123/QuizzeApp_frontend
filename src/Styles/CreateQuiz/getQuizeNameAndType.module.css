@@ -1,0 +1,142 @@
+
+.createNameContainer {
+  background-color: rgba(255, 255, 255, 0.5);
+  /* Semi-transparent white background */
+  
+
+  padding: 20px;
+  /* Adjust padding as needed */
+  border-radius: 10px;
+  /* Optional: rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* Optional: subtle shadow for better visibility */
+}
+
+/* Style for the container holding the form */
+.container {
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Semi-transparent dark background */
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  /* Center the form horizontally */
+  align-items: center;
+  /* Center the form vertically */
+  height: 100vh;
+  /* Full viewport height */
+}
+
+
+.createNameForm {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0;
+}
+
+.createNameForm>div {
+  margin: 5px auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* Ensure items are centered vertically */
+}
+
+.createNameForm>div:nth-child(2),
+.createNameForm>div:nth-child(3) {
+  width: 78%;
+}
+
+.createNameForm>div>input {
+  width: 100%;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 38px;
+  padding: 7px 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  box-shadow: 1px 1px 5px 0 #9F9F9F;
+}
+
+.createNameForm>div>label {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 40px;
+  color: #9F9F9F;
+}
+
+.createNameForm>div>h2 {
+  font-size: 19px;
+  font-weight: 500;
+  padding: 4px 10px;
+  width: 120px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px 0 #9F9F9F;
+  cursor: pointer;
+  transition: 0.3s ease-out;
+  color: #9F9F9F;
+  
+}
+
+.createNameForm>div>div>h2:hover {
+  color: #fff;
+  background-color: #60B84B;
+}
+
+/* Add responsive design for the quiz type options */
+.createNameForm>div:nth-child(2) {
+  display: flex;
+  flex-wrap: wrap;
+  /* Ensure items wrap if needed */
+  justify-content: space-between;
+  /* Align items with space between */
+}
+
+/* Ensure buttons are on the same line and responsive */
+.buttons {
+  margin-top: 28px;
+  display: flex;
+  justify-content: space-between;
+  /* Align buttons with space between */
+}
+
+/* Add padding to buttons */
+.buttons>button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Change hover styles for buttons */
+.buttons>button:hover {
+  background-color: #54a540;
+  color: #fff;
+}
+
+.createNameForm>.buttons>.bgGrn,
+.bgGrn {
+  background-color: #60B84B;
+  color: #fff !important;
+}
+
+@media (max-width: 768px) {
+  .createNameForm>div {
+    width: 90%;
+  }
+
+  .createNameForm>div:nth-child(2) {
+    flex-direction: column;
+    /* Stack quiz type options vertically on smaller screens */
+    align-items: center;
+  }
+
+  .buttons {
+    flex-direction: column;
+    /* Stack buttons vertically on smaller screens */
+    align-items: center;
+  }
+}
